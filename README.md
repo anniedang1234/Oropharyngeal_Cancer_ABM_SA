@@ -1,8 +1,16 @@
 # Oropharyngeal Cancer Agent-Based Model Sensitivity Analysis
 This repo contains all the scripts required to conduct a sensitivity analysis for an oropharyngeal cancer agent-based model hosted at https://github.com/anniedang1234/Oropharyngeal_Cancer_ABM.
 
-## best_window.py
+## Generating cell position file
 This script is used to select a portion of the spatial transcriptomics data to run sensitivity analysis on, to reduce computational cost. This script finds the subsection whose cell type and cell gene expression most closely matches that of the full data.
+
+## Generating parameters
+Run sample_generate.py to generate a csv file containing all the sets of parameters.
+Run generate.py to parse those sets of parameters into individual csv files.
+```bash
+py sample_generate.py
+py generate.py
+```
 
 ## Running the sensitivity analysis
 To run the analysis on DRAC, use the following in your slurm script:
@@ -36,7 +44,6 @@ for i in $(seq 0 199); do
     else
         echo "${i} FAILED" >> $all_tumour_counts
     fi
-```
-
     rm -rf /home/annied/Results_SA_${SLURM_JOB_ID}/run_${i}
 done
+```
