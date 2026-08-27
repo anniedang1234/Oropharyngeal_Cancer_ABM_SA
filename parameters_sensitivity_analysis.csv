@@ -1,0 +1,20 @@
+Parameter name,Mean,SD,Lower Bound,Upper Bound,Parameter Name
+IFN-gamma diffusion,1192.5,2951.4375,119.25,11925,parameter_0
+IFN-gamma decay,0.0077,0.0190575,0.00077,0.077,parameter_1
+IFN-gamma initial concentration,2.16E-10,5.35E-10,2.16E-11,2.16E-09,parameter_2
+TGF-beta diffusion,1100,2722.5,110,11000,parameter_3
+TGF-beta decay,0.00144,0.003564,0.000144,0.0144,parameter_4
+Active TGF-beta concentration,6.23E-08,1.54E-07,6.23E-09,0.000000623,parameter_5
+Collagen initial concentration,0.256,0.6336,0.0256,2.56,parameter_6
+Tumour proliferation rate,0.000025,0.000061875,0.0000025,0.00025,parameter_7
+CAF proliferation rate,0.0004857,0.001202108,0.00004857,0.004857,parameter_8
+Tumour migration rate,700,1732.5,70,7000,parameter_9
+CAF migration rate,150,371.25,15,1500,parameter_10
+CD8 T migration rate,6.57,16.26075,0.657,65.7,parameter_11
+IFN-gamma secretion by CD8 T,0.001307,0.003234825,0.0001307,0.01307,parameter_12
+TGF-beta secretion by tumour,0.000000004,9.90E-09,4.00E-10,0.00000004,parameter_13
+Collagen secretion by CAF,62.3,154.1925,6.23,623,parameter_14
+TGF-beta secretion by CAF,0.000003039,7.52E-06,3.04E-07,0.00003039,parameter_15
+CD8 T kill threshold until exhaustion,17.5,43.3125,1.75,175,parameter_16
+PDL1 expression in tumour IFN-gamma threshold,0.00000064,0.000001584,0.000000064,0.0000064,parameter_17
+PDL1 expression in CAF IFN-gamma threshold,3.20E-08,7.92E-08,3.20E-09,0.00000032,parameter_18
