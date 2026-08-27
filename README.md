@@ -47,3 +47,9 @@ for i in $(seq 0 199); do
     rm -rf /home/annied/Results_SA_${SLURM_JOB_ID}/run_${i}
 done
 ```
+
+## Run random forest
+Ensure all_tumour_counts.csv is in the same directory as random_forest.py. Then, run random_forest.py to print a ranking of all parameters. The parameter names are listed in parameters_sensitivity_analysis.
+```bash
+py random_forest.py
+```
